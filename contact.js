@@ -1,5 +1,6 @@
 function sendMessage() {
     var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
     var title = document.getElementById("title").value;
     var description = document.getElementById("description").value;
 
@@ -11,7 +12,7 @@ function sendMessage() {
 
     // Create a JSON object with the data
     var messageData = {
-        content: `**Name:** ${name}\n**Title:** ${title}\n**Description:** ${description}`
+        content: `**Name:** ${name}}\n**Email:** ${email}\n**Title:** ${title}\n**Description:** ${description}`
     };
 
     // Send the JSON data to the provided webhook URL
